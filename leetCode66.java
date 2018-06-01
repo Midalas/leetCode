@@ -1,9 +1,6 @@
-package test;
+package leetCode;
 
-import java.util.ArrayList;
-import java.util.List;
 
-@SuppressWarnings("unused")
 public class leetCode66 {
 
 	public static void main(String[] args) throws Exception {

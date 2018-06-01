@@ -1,16 +1,5 @@
-package test;
+package leetCode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Stack;
-
-@SuppressWarnings("unused")
 public class leetCode113 {
 
 	public static void main(String[] args) throws Exception {
@@ -22,20 +11,6 @@ public class leetCode113 {
 		// / \
 		// 7 8
 
-		// List<String> result=new ArrayList<String>();
-		// result.add("T");
-		// List<String> items = new ArrayList<>();
-		// items.add("A");
-		// items.add("B");
-		// items.add("C");
-		// items.add("D");
-		// items.add("E");
-		// items.forEach(item->{
-		// if("C".equals(item)){
-		// result.add(0, result.get(0)+item);;
-		// System.out.println(result.get(0)+item);
-		// }
-		// });
 
 		TreeNode root = new TreeNode(1);
 		root.left = new TreeNode(2);

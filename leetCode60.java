@@ -1,4 +1,4 @@
-package test;
+package leetCode;
 
 import java.util.ArrayList;
 import java.util.List;

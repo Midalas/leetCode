@@ -1,7 +1,4 @@
-package test;
-
-import java.util.ArrayList;
-import java.util.List;
+package leetCode;
 
 @SuppressWarnings("unused")
 public class leetCode61 {
