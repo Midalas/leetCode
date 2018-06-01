@@ -1,39 +1,39 @@
 package leetCode;
 
-
 public class test2 {
 
 	public static void main(String[] args) throws Exception {
+		String s = ".,";
 
-		TreeLinkNode root = new TreeLinkNode(3);
-		root.left = new TreeLinkNode(9);
-		root.right = new TreeLinkNode(20);
-
-		root.right.left = new TreeLinkNode(15);
-		root.right.right = new TreeLinkNode(7);
-		connect(root);
-		System.out.println();
 	}
 
-	public static void connect(TreeLinkNode root) {
-		if (root == null)
-			return;
-		TreeLinkNode temp = root;
-		while (temp != null) {
-			TreeLinkNode temp1 = new TreeLinkNode(0);
-			TreeLinkNode pre = temp1;
-			while (temp != null) {
-				if (temp.left != null) {
-					pre.next = temp.left;
-					pre = pre.next;
-				}
-				if (temp.right != null) {
-					pre.next = temp.right;
-					pre = pre.next;
-				}
-				temp = temp.next;
+	public void sort(int arr[], int low, int high) {
+		int l = low;
+		int h = high;
+		int povit = arr[low];
+		while (l < h) {
+			while (l < h && arr[h] >= povit)
+				h--;
+			if (l < h) {
+				int temp = arr[h];
+				arr[h] = arr[l];
+				arr[l] = temp;
+				l++;
 			}
-			temp = temp1.next;
+			while (l < h && arr[l] <= povit)
+				l++;
+			if (l < h) {
+				int temp = arr[h];
+				arr[h] = arr[l];
+				arr[l] = temp;
+				h--;
+			}
 		}
+		// print(arr);
+		System.out.print("l=" + (l + 1) + "h=" + (h + 1) + "povit=" + povit + "\n");
+		if (l > low)
+			sort(arr, low, l - 1);
+		if (h < high)
+			sort(arr, l + 1, high);
 	}
 }
