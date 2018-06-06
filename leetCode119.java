@@ -6,14 +6,12 @@ import java.util.List;
 public class leetCode119 {
 
 	public static void main(String[] args) throws Exception {
-
 		// [1],
 		// [1,1],
 		// [1,2,1],
 		// [1,3,3,1],
 		// [1,4,6,4,1]
-		getRow(1);
-		System.out.println();
+		System.out.println(getRow(1));
 	}
 
 	 public static  List<Integer> getRow(int rowIndex) {

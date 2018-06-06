@@ -6,14 +6,16 @@ import java.util.List;
 public class leetCode120 {
 
 	public static void main(String[] args) throws Exception {
+		
+		
 		// [2],
 		// [3,4],
 		// [6,5,7],
 		// [4,1,8,3]
 		List<List<Integer>> triangle = Arrays.asList(Arrays.asList(2), Arrays.asList(3, 4), Arrays.asList(6, 5, 7),
 				Arrays.asList(4, 1, 8, 3));
-		minimumTotal(triangle);
-		System.out.println();
+		
+		System.out.println(minimumTotal(triangle));
 	}
 
 	public static int minimumTotal(List<List<Integer>> triangle) {
