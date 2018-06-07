@@ -3,7 +3,7 @@ package leetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class test2 {
+public class leetCode515 {
 
 	public static void main(String[] args) throws Exception {
 		TreeNode root=new TreeNode(5);

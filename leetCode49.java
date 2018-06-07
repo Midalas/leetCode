@@ -23,8 +23,6 @@ public class leetCode49 {
 	}
 
 	public static List<List<String>> groupAnagrams(String[] strs) {
-		List<List<String>> result = new ArrayList<List<String>>();
-		List<String> strsList = new ArrayList<String>();
 		Map<String, List<String>> map = new HashMap<String, List<String>>();
 		for (int i = 0; i < strs.length; i++) {
 			String temp = hashStr(strs[i]);
@@ -36,7 +34,6 @@ public class leetCode49 {
 	}
 
 	private static String hashStr(String str) {
-		String result = "";
 		char[] temp = str.toCharArray();
 		Arrays.sort(temp);
 		return String.valueOf(temp);
