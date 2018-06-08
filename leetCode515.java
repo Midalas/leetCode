@@ -6,14 +6,18 @@ import java.util.List;
 public class leetCode515 {
 
 	public static void main(String[] args) throws Exception {
-		TreeNode root=new TreeNode(5);
-		root.left=new TreeNode(2);
-		root.right=new TreeNode(-5);
-		
-		List<Integer> x=largestValues(root);
-		System.out.println();
+		TreeNode root = new TreeNode(1);
+		root.left = new TreeNode(2);
+		root.right = new TreeNode(3);
+		root.right.left = new TreeNode(4);
+		root.right.right = new TreeNode(5);
+		List<TreeNode> node = new ArrayList<TreeNode>();
+		node.add(root);
+		List<Integer> x = largestValues(root);
+		// Encodes a tree to a single string.
+		System.out.println(x);
 	}
-	//二叉树层次遍历 leetCode102
+
 	public static List<Integer> largestValues(TreeNode root) {
 		List<Integer> result=new ArrayList<Integer>();
 		List<List<Integer>> temp=levelOrder(root);
