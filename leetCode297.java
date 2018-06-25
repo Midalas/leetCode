@@ -17,7 +17,7 @@ public class leetCode297 {
 
 		TreeNode result = deserialize(x);
 
-		System.out.println();
+		System.out.println(result);
 	}
 	// Encodes a tree to a single string.
 	public static String serialize(TreeNode root) {
