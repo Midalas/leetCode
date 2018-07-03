@@ -1,8 +1,6 @@
 package leetCode;
 
-import java.util.Stack;
-
-public class test2 {
+public class leetCode328 {
 
 
 	public static void main(String[] args) throws Exception {
@@ -27,15 +25,16 @@ public class test2 {
 		int count = 1;
 		while (head != null) {
 			if (count % 2 == 1) {
-				temp1.next = new ListNode(head.val);
+				temp1.next = head;
 				temp1 = temp1.next;
 			} else {
-				temp2.next = new ListNode(head.val);
+				temp2.next = head;
 				temp2 = temp2.next;
 			}
 			head = head.next;
 			count++;
 		}
+		temp2.next=null;
 		temp1.next = l2.next;
 		return l1.next;
 	}

@@ -15,8 +15,11 @@ public class leetCode236 {
 	public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		if (root == p || root == q || root == null)
 			return root;
+		//找左子树
 		TreeNode left = lowestCommonAncestor(root.left, p, q);
+		//找右子树
 		TreeNode right = lowestCommonAncestor(root.right, p, q);
+	
 		if (left == null) {
 			return right;
 		} else if (right == null) {
