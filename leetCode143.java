@@ -1,6 +1,6 @@
 package leetCode;
 
-public class test2 {
+public class leetCode143 {
 
 	public static void main(String[] args) throws Exception {
 
