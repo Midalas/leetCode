@@ -1,8 +1,6 @@
 package leetCode;
 
-import java.util.ArrayList;
-
-public class test2 {
+public class leetCode138 {
 
 	public static void main(String[] args) throws Exception {
 
@@ -16,7 +14,6 @@ public class test2 {
 		temp = temp.next;
 		temp.next = new RandomListNode(5);
 		temp = temp.next;
-		
 
 		root.random=root.next.next.next;//(1→4)
 		root.next.random=root.next.next.next.next;//(2→5)
