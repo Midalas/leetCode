@@ -1,56 +1,62 @@
 package leetCode;
 
+import java.util.ArrayList;
+
 public class test2 {
 
 	public static void main(String[] args) throws Exception {
 
-		ListNode head = new ListNode(1);
-		ListNode temp = head;
+		ListNode root = new ListNode(1);
+		ListNode temp = root;
 		temp.next = new ListNode(2);
 		temp = temp.next;
 		temp.next = new ListNode(3);
 		temp = temp.next;
-		temp.next = new ListNode(4);
-		temp = temp.next;
-		temp.next = new ListNode(5);
-		temp = temp.next;
-
-		reorderList(head);
+		// temp.next = new ListNode(4);
+		// temp = temp.next;
+		// temp.next = new ListNode(5);
+		// temp = temp.next;
+		// temp.next = new ListNode(6);
+		// temp = temp.next;
+		// temp.next = new ListNode(7);
+		// temp = temp.next;
+		// temp.next = new ListNode(8);
+		// temp = temp.next;
+		// temp.next = new ListNode(9);
+		// temp = temp.next;
+		// temp.next = new ListNode(10);
+		// temp = temp.next;
+		ListNode[] x = splitListToParts(root, 5);
 		System.out.println();
 
 	}
 
-	public static void reorderList(ListNode head) {
-		if(head==null)
-			return;
-		ListNode fast = head;
-		ListNode slow = head;
-		while (fast != null && fast.next != null) {
-			slow = slow.next;
-			fast = fast.next.next;
+	public static ListNode[] splitListToParts(ListNode root, int k) {
+		ListNode[] result = new ListNode[k];
+		int length = getLengthOfListNode(root);
+		int least = length / k;
+		int plus = length % k;
+		for (int i = 0; i < k; i++) {
+			ListNode temp = root;
+			int j = least + (i < plus ? 1 : 0);
+			if (j < 1)
+				break;
+			while (j > 1) {
+				temp = temp.next;
+				j--;
+			}
+			ListNode next = temp.next;
+			temp.next = null;
+			result[i] = root;
+			root = next;
 		}
-		ListNode l2 = slow.next;
-		slow.next = null;
-		l2 = reverseList(l2);
-		ListNode l1 = head;
-		while (l2 != null) {
-			ListNode next = l1.next;
-			l1.next = l2;
-			l2 = l2.next;
-			l1 = l1.next;
-			l1.next = next;
-			l1 = l1.next;
-		}
+		return result;
 	}
 
-	public static ListNode reverseList(ListNode head) {
-		ListNode pre = null;
-		while (head != null) {
-			ListNode tmp = head;
-			head = head.next;
-			tmp.next = pre;
-			pre = tmp;
-		}
-		return pre;
+	private static int getLengthOfListNode(ListNode root) {
+		if (root == null)
+			return 0;
+		return getLengthOfListNode(root.next) + 1;
 	}
+
 }
