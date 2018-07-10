@@ -1,9 +1,5 @@
-package leetCode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
+package leetCode;
 
 public class test2 {
 
@@ -11,6 +7,7 @@ public class test2 {
 
 		System.out.println();
 	}
+
 
 
 }

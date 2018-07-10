@@ -14,7 +14,7 @@ public class leetCode350 {
 
 		System.out.println();
 	}
-    public static int[] intersect(int[] nums1, int[] nums2) {
+	public static int[] intersect(int[] nums1, int[] nums2) {
 		Arrays.sort(nums1);
 		Arrays.sort(nums2);
 		List<Integer> list = new ArrayList<Integer>();
