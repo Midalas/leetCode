@@ -1,15 +1,16 @@
 
 package leetCode;
 
-public class test2 {
+public class leetCode374 {
 
 	public static void main(String[] args) throws Exception {
 
-		int n = 2;
+		int n = 10;
 		int x = guessNumber(n);
-		System.out.println();
+		System.out.println(x);
 	}
-
+	public static int target=8;
+	
 	public static int guessNumber(int n) {
 		int low = 1;
 		int high = n;
@@ -28,13 +29,12 @@ public class test2 {
 	}
 
 	private static int guess(int num) {
-		int x = 1;
-		if (num == x) {
+		if (num == target) {
 			return 0;
-		} else if (num > x) {
-			return 1;
-		} else {
+		} else if (num > target) {
 			return -1;
+		} else {
+			return 1;
 		}
 	}
 }
