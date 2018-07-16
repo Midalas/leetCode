@@ -1,11 +1,11 @@
 
 package leetCode;
 
-public class test2 {
+public class leetCode709 {
 
 	public static void main(String[] args) throws Exception {
 
-		String str="AAOHSDOAIHIAYGSIhidsygfousaijdosugIUHOIHOIH";
+		String str="AAOHSDOAIHI&*$#@AYGSIhidsygfousaijdosugIUHOIHOIH";
 		String x=toLowerCase(str);
 		System.out.println();
 	}
