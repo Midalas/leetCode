@@ -11,6 +11,7 @@ public class leetCode709 {
 	}
 	
 	
+	
 	public static String toLowerCase(String str) {
 		char[] ch=str.toCharArray();
 		for(int i=0;i<ch.length;i++){
