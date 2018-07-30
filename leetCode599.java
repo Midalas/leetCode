@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class test2 {
+public class leetCode599 {
 
 	public static void main(String[] args) throws Exception {
 
