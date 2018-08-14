@@ -1,7 +1,7 @@
 
 package leetCode;
 
-public class test2 {
+public class leetCode338 {
 
 	public static void main(String[] args) throws Exception {
 

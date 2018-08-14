@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-import mi.ImageHelper;
+import unuseful.ImageHelper;
 
 @SuppressWarnings("unused")
 public class getImageParam {
