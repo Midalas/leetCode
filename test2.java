@@ -4,25 +4,20 @@ package leetCode;
 public class test2 {
 
 	public static void main(String[] args) throws Exception {
-
-		int[] x = countBits(2);
-		System.out.println();
+		int[] nums={2,2,2,3};
+		
+		int x=singleNumber(nums);
+		System.out.println("");
 	}
-
-	//runtime 2ms
-	public static int[] countBits(int num) {
-		int[] res = new int[num + 1];
-		int now = 1;
-		int i = 1;
-		while (i <= num) {
-			if (i == now + now) {
-				res[i] = 1;
-				now += now;
-			} else {
-				res[i] = res[i - now] + 1;
-			}
-			i++;
-		}
-		return res;
-	}
+	public static int singleNumber(int[] nums) {
+		int one = 0, two = 0;
+        for(int i=0;i<nums.length;i++){
+        	two |= nums[i] & one;
+    		one ^= nums[i];
+    		int three = one & two;
+    		one &= ~three;
+    		two &= ~three;
+        }
+		return one;
+    }
 }
