@@ -4,23 +4,22 @@ package leetCode;
 public class test2 {
 
 	public static void main(String[] args) throws Exception {
-
+//				输入: numerator = 1, denominator = 2
+//				输出: "0.5"
+//				示例 2:
+//
+//				输入: numerator = 2, denominator = 1
+//				输出: "2"
+//				示例 3:
+//
+//				输入: numerator = 2, denominator = 3
+//				输出: "0.(6)"
 		System.out.println("");
 	}
-
-
-    public static int findPeakElement(int[] nums) {
-        
+    public static String fractionToDecimal(int numerator, int denominator) {
     	
-    	return 0;
+    	
+    	return "";
     }
     
-    private static int findResult(int[] nums,int start,int end ){
-    	int middle=(start+end)/2;
-    	
-
-    	
-    	
-    	return 0;
-    }
 }
