@@ -8,10 +8,13 @@ public class test2 {
 		System.out.println("");
 	}
 
+	public static int[] singleNumber(int[] nums) {
+		int[] res = new int[2];
+		int temp=0;
+		for (int i = 0; i < nums.length; i++) {
+			temp^=nums[i];
+		}
+		return res;
+	}
 
-    public static int rangeBitwiseAnd(int m, int n) {
-        
-    	
-    	return 0;
-    }
 }
