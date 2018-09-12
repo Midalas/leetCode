@@ -1,28 +1,27 @@
-
 package leetCode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
+@SuppressWarnings("unused")
 public class test2 {
-
 	public static void main(String[] args) throws Exception {
-		int[] arr={1,2,3,4,5};
-		Map<String,Object> map=new HashMap<String,Object>();
-		map.put("3", "12344t5y6trf");
-		map.put("1", 1);
-		map.put("2", arr);
-		
-		int[] arr1=(int[]) map.get("2");
-		int a=(int)map.get("1");
-		String b=map.get("3").toString();
-		System.out.println("");
+
+		System.out.println();
 	}
 
-	public static <T> int maxProfit(Class<T> prices) {
-		
-		
-		
-		return 0;
+	public List<String> removeInvalidParentheses(String s) {
+		List<String> res = new ArrayList<String>();
+		int length = s.length();
+
+		for (int i = 0; i < s.length(); i++) {
+			
+		}
+
+		return res;
+	}
+
+	private static void dfs(List<String> list, String s) {
+
 	}
 }
