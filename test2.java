@@ -1,7 +1,9 @@
 package leetCode;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @SuppressWarnings("unused")
 public class test2 {
@@ -10,18 +12,20 @@ public class test2 {
 		System.out.println();
 	}
 
-	public List<String> removeInvalidParentheses(String s) {
-		List<String> res = new ArrayList<String>();
-		int length = s.length();
-
-		for (int i = 0; i < s.length(); i++) {
-			
+	public static List<Integer> topKFrequent(int[] nums, int k) {
+		List<Integer> res = new ArrayList<Integer>();
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		for (int i = 0; i < nums.length; i++) {
+			int t = nums[i];
+			if (map.containsKey(t)) {
+				map.put(t, map.get(t));
+			} else {
+				map.put(t, 1);
+			}
 		}
-
+		
+		
+		
 		return res;
-	}
-
-	private static void dfs(List<String> list, String s) {
-
 	}
 }
