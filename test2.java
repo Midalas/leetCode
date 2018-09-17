@@ -1,9 +1,12 @@
 package leetCode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 @SuppressWarnings("unused")
 public class test2 {
@@ -11,21 +14,12 @@ public class test2 {
 
 		System.out.println();
 	}
-
-	public static List<Integer> topKFrequent(int[] nums, int k) {
-		List<Integer> res = new ArrayList<Integer>();
-		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for (int i = 0; i < nums.length; i++) {
-			int t = nums[i];
-			if (map.containsKey(t)) {
-				map.put(t, map.get(t));
-			} else {
-				map.put(t, 1);
-			}
-		}
-		
-		
-		
-		return res;
-	}
+	
+    public static int kthSmallest(int[][] matrix, int k) {
+        int len=matrix.length;
+        
+    	
+    	
+    	return 0;
+    }
 }
