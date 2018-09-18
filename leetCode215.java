@@ -13,26 +13,27 @@ import com.sun.jna.platform.win32.Winspool.PRINTER_INFO_4;
 import java.util.PriorityQueue;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode215 {
 	public static void main(String[] args) throws Exception {
-
+		int[] nums={3,2,1,5,6,4};
+		int k = 2;
+		int x=findKthLargest(nums, k);
 		System.out.println();
 	}
 
-	public int[] kthSmallestPrimeFraction(int[] A, int K) {
-		int[] res = new int[2];
-		PriorityQueue<int[]> queue = new PriorityQueue<int[]>(new Comparator<int[]>() {
+	//runtime 18ms
+	public static int findKthLargest(int[] nums, int k) {
+		PriorityQueue<Integer> queue = new PriorityQueue<Integer>(new Comparator<Integer>() {
 			@Override
-			public int compare(int[] o1, int[] o2) {
+			public int compare(Integer o1, Integer o2) {
 				// TODO Auto-generated method stub
-				int val1 = o1[0] * o2[1];
-				int val2 = o1[1] * o2[0];
-				return val1 - val2;
+				return o2.compareTo(o1);
 			}
 		});
-		for (int i = 0; i < A.length - 1; i++) {
-			
-		}
-		return res;
+		for (int i = 0; i < nums.length; i++)
+			queue.add(nums[i]);
+		while (k-- > 1)
+			queue.poll();
+		return queue.poll();
 	}
 }
