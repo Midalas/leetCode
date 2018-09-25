@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode406 {
 	public static void main(String[] args) {
 		// 输入:
 		// [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]
