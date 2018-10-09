@@ -8,13 +8,14 @@ import java.util.Random;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode860 {
 	public static void main(String[] args) {
 		int[] bills={5,5,5,10,20};
 		boolean x=lemonadeChange(bills);
 		System.out.println();
 	}
 
+	
 	//runtime 5ms
 	public static boolean lemonadeChange(int[] bills) {
 		int count5 = 0;
