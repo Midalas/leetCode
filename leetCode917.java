@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode917 {
 	public static void main(String[] args) {
 		String S = "7_28]";
 		String x = reverseOnlyLetters(S);
