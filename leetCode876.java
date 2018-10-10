@@ -14,18 +14,21 @@ import java.util.Set;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode876 {
 	public static void main(String[] args) {
 
 		System.out.println();
 	}
 
-    public static int surfaceArea(int[][] grid) {
-    	
-    	
-    	
-    	
-        return 0;
-    }
+	//runtime 1ms
+	public static ListNode middleNode(ListNode head) {
+		ListNode quick = head;
+		ListNode slow = head;
+		while (quick != null && quick.next != null) {
+			quick = quick.next.next;
+			slow = slow.next;
+		}
+		return slow;
+	}
 
 }
