@@ -14,18 +14,27 @@ import java.util.Set;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode137 {
 	public static void main(String[] args) {
-
+		int[] nums={0,1,0,1,0,1,99};
+		int x=singleNumber(nums);
 		System.out.println();
 	}
 
-	public List<List<String>> partition(String s) {
-		List<List<String>> res = new ArrayList<List<String>>();
-		char[] ch=s.toCharArray();
-		
-		
-		
+	//runtime 11ms
+	public static int singleNumber(int[] nums) {
+		int res = 0;
+		for (int i = 0; i < 32; i++) {
+			int count = 0;
+			int mask = 1 << i;
+			for (int j = 0; j < nums.length; j++) {
+				if ((nums[j] & mask) != 0) {
+					count++;
+				}
+			}
+			if (count % 3 != 0)
+				res |= mask;
+		}
 		return res;
 	}
 
