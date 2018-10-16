@@ -15,7 +15,7 @@ import java.util.Set;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode648 {
 	public static void main(String[] args) {
 
 		String[] arr = { "a", "aa", "aaa", "aaaa" };
