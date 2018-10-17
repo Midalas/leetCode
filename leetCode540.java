@@ -15,18 +15,19 @@ import java.util.Set;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode540 {
 	public static void main(String[] args) {
-
+		int[] nums = { 3 };
+		int x = singleNonDuplicate(nums);
 		System.out.println();
 	}
 
-    public static int largestOverlap(int[][] A, int[][] B) {
-    	
-    	
-    	
-    	
-    	
-        return 0;
-    }
+	//runtime 1ms
+	public static int singleNonDuplicate(int[] nums) {
+		for (int i = 0; i < nums.length - 1; i += 2) {
+			if (nums[i] != nums[i + 1])
+				return nums[i];
+		}
+		return nums[nums.length - 1];
+	}
 }

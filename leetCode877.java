@@ -15,18 +15,15 @@ import java.util.Set;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode877 {
 	public static void main(String[] args) {
 
 		System.out.println();
 	}
 
-    public static int largestOverlap(int[][] A, int[][] B) {
-    	
-    	
-    	
-    	
-    	
-        return 0;
+	//runtime 4ms
+    public boolean stoneGame(int[] piles) {
+        return true;
     }
+
 }

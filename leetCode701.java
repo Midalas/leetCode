@@ -15,18 +15,21 @@ import java.util.Set;
 import java.util.Stack;
 
 @SuppressWarnings("unused")
-public class test2 {
+public class leetCode701 {
 	public static void main(String[] args) {
 
 		System.out.println();
 	}
 
-    public static int largestOverlap(int[][] A, int[][] B) {
-    	
-    	
-    	
-    	
-    	
-        return 0;
-    }
+	//runtime 3ms
+	public TreeNode insertIntoBST(TreeNode root, int val) {
+		if (root == null)
+			return new TreeNode(val);
+		if (root.val < val) {
+			root.right = insertIntoBST(root.right, val);
+		} else if (root.val > val) {
+			root.left = insertIntoBST(root.left, val);
+		}
+		return root;
+	}
 }
