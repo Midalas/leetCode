@@ -1,6 +1,6 @@
 package leetCode;
 
-public class test2 {
+public class leetCode740 {
 	public static void main(String[] args) throws Exception {
 		int[] nums = { 2};
 		int x = deleteAndEarn(nums);
