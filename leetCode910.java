@@ -2,16 +2,15 @@ package leetCode;
 
 import java.util.Arrays;
 
-public class test2 {
+public class leetCode910 {
 	public static void main(String[] args) throws Exception {
-		int[] A = {};
-		int K = 7147;
-		// int x = smallestRangeII(A, K);
-		int x1 = smallestRangeII(A, K);
+		int[] A = { 5, 6, 4 };
+		int K = 5;
+		int x = smallestRangeII(A, K);
 		System.out.println();
 	}
 
-	//runtime 12ms
+	// runtime 12ms
 	public static int smallestRangeII(int[] A, int K) {
 		if (A.length < 100) {
 			Arrays.sort(A);
@@ -48,4 +47,5 @@ public class test2 {
 		}
 		return res;
 	}
+	
 }
