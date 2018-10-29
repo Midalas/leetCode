@@ -12,7 +12,12 @@ public class leetCode796 {
 
 		System.out.println();
 	}
-
+	
+	//fastest solution 2ms
+	 public static boolean rotateString1(String A, String B) {
+	       return A.length() == B.length() && (A + A).contains(B);
+	 }
+	
 	//15ms
 	public static boolean rotateString(String A, String B) {
 		if (A.length() != B.length())
@@ -25,9 +30,6 @@ public class leetCode796 {
 		return len==0;
 	}
 	
-	//fastest solve 2ms
-	 public static boolean rotateString1(String A, String B) {
-	       return A.length() == B.length() && (A + A).contains(B);
-	 }
+
 
 }

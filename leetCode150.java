@@ -48,7 +48,7 @@ public class leetCode150 {
 	}
 
 	
-	//fast solve 3ms
+	//fast solution 3ms
 	private int N = -1;
 	public int evalRPN1(String[] tokens) {
 		if (N == -1)

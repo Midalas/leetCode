@@ -26,7 +26,7 @@ public class leetCode152 {
 		return res;
 	}
 
-	// fast solve 1ms
+	// fast solution 1ms
 	public static int maxProduct1(int[] nums) {
 		if (nums == null)
 			return 0;

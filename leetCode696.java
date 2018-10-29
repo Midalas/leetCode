@@ -13,7 +13,7 @@ public class leetCode696 {
 		System.out.println();
 	}
 
-	// fastest solve 15ms
+	// fastest solution 15ms
 	public static int countBinarySubstrings(String s) {
 		if (s == null || s.length() < 1) {
 			return 1;
