@@ -1,6 +1,6 @@
 package leetCode;
 
-public class test2 {
+public class leetCode904 {
 	public static void main(String[] args) throws Exception {
 		int[] tree = { 1, 1 };
 		int x = totalFruit(tree);
