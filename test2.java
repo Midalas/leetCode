@@ -1,34 +1,31 @@
 package leetCode;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class test2 {
 	public static void main(String[] args) throws Exception {
-		int[] tree = { 1, 1 };
-		int x = totalFruit(tree);
+		int[] nums = { 9, 1, 2, 3, 9 };
+
+		largestSumOfAverages(nums, 3);
 		System.out.println();
 	}
 
-	//runtime 12ms
-	public static int totalFruit(int[] tree) {
-		int res = 0;
-		int start = 0;
-		while (start < tree.length - 1) {
-			if (tree[start] != tree[start + 1]) {
-				int left = start;
-				int right = start + 1;
-				while (left >= 0 && (tree[left] == tree[start] || tree[left] == tree[start + 1])) {
-					left--;
-				}
-				while (right < tree.length && (tree[right] == tree[start] || tree[right] == tree[start + 1])) {
-					right++;
-				}
-				res = right - left - 1 > res ? right - left - 1 : res;
-				start = right - 1;
-			} else {
-				start++;
+	public static double largestSumOfAverages(int[] A, int K) {
+		double res = 0.0;
+		double sum = 0.0;
+		PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
+		for (int i = 0; i < A.length; i++) {
+			queue.add(A[i]);
+			if (queue.size() > K - 1) {
+				sum += queue.poll();
 			}
 		}
-
-		return res == 0 ? tree.length : res;
+		res = sum / (A.length - K + 1);
+		while (!queue.isEmpty()) {
+			res += queue.poll();
+		}
+		return res;
 	}
 
 }
