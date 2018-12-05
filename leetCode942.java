@@ -2,14 +2,13 @@ package leetCode;
 
 import java.util.Arrays;
 
-public class test2 {
+public class leetCode942 {
 	public static void main(String[] args) throws Exception {
 		String S = "DDDDDIDDDD";
 
 		int[] x = diStringMatch(S);
 		System.out.println(1);
 	}
-
 
 	// runtime 12ms
 	public static int[] diStringMatch(String S) {
@@ -19,7 +18,6 @@ public class test2 {
 		for (int i = 0; i < res.length; i++) {
 			res[i] = i;
 		}
-
 		for (int i = 0; i < ch.length; i++) {
 			if (ch[i] == 'D') {
 				for (int j = i; j >= lastestIndexD; j--) {

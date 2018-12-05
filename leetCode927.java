@@ -14,6 +14,7 @@ public class leetCode927 {
 	public static int[] threeEqualParts(int[] A) {
 		int headZeroIndex = 0;
 		int end = A.length - 1;
+		//前置0处理
 		while (headZeroIndex < A.length && A[headZeroIndex] == 0) {
 			headZeroIndex++;
 		}
@@ -21,6 +22,7 @@ public class leetCode927 {
 			return new int[] { 0, end };
 		}
 
+		
 		for (int i = (A.length - 2 - headZeroIndex) / 3 + headZeroIndex; i >= headZeroIndex; i--) {
 			int countL = getCountOne(A, headZeroIndex, i);
 			for (int j = i + 2; j < A.length; j++) {
