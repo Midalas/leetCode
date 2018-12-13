@@ -1,6 +1,6 @@
 package leetCode;
 
-public class test2 {
+public class leetCode754 {
 	public static void main(String[] args) throws Exception {
 
 		int target = 18;
@@ -8,7 +8,7 @@ public class test2 {
 		System.out.println();
 	}
 
-	
+		
 	//runtime 9ms
 	public static int reachNumber(int target) {
 		if (target < 0)
@@ -17,9 +17,6 @@ public class test2 {
 		int i = 1;
 		while (sum < target) {
 			sum += i++;
-		}
-		if (sum == target) {
-			return i - 1;
 		}
 		if ((sum - target) % 2 == 0) {
 			return i - 1;
