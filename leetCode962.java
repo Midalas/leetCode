@@ -1,6 +1,6 @@
 package leetCode;
 
-public class test2 {
+public class leetCode962 {
 
 	public static void main(String[] args) throws Exception {
 		int[] A = { 6, 0, 8, 2, 1, 5 };
